@@ -1,0 +1,26 @@
+# Developed for Anunzio International by Anzul Aqeel. Contact +971545822608 or +971585515742. Linkedin Profile: linkedin.com/in/anzulaqeel
+
+name: 'Markdown Table Formatter'
+description: 'Formats and aligns markdown tables.'
+author: 'Anzul Aqeel'
+inputs:
+  token:
+    description: 'GitHub Token'
+    required: true
+    default: '${{ github.token }}'
+  files:
+    description: 'Glob pattern of files to format'
+    required: false
+    default: '**/*.md'
+  commit_message:
+    description: 'Commit message'
+    required: false
+    default: 'chore: format markdown tables'
+runs:
+  using: 'node16'
+  main: 'index.js'
+branding:
+  icon: 'layout'
+  color: 'gray'
+
+# Developed for Anunzio International by Anzul Aqeel. Contact +971545822608 or +971585515742. Linkedin Profile: linkedin.com/in/anzulaqeel
